@@ -1,7 +1,3 @@
 export default function GameGrid() {
-    return ( 
-        <div>
-            
-        </div>
-     );
+  return <div></div>
 }
