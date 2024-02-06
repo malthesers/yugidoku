@@ -17,7 +17,7 @@ export default function Home() {
         <LabelBox label="x" />
         <LabelBox label="Fish" />
         <LabelBox label="x" />
-        <div className="col-span-5">
+        <div className="col-span-5 grid place-content-center">
           <p className="text-center">bottom text</p>
         </div>
       </div>
