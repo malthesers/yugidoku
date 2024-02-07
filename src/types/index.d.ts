@@ -58,3 +58,8 @@ interface CardType extends BaseProperty {
   property: 'Card Type'
   value: 'Normal' | 'Effect' | 'Ritual' | 'Fusion' | 'Synchro' | 'Xyz' | 'Pendulum' | 'Link'
 }
+
+interface Ability extends BaseProperty {
+  property: 'Ability'
+  value: 'Toon' | 'Spirit' | 'Union' | 'Gemini' | 'Flip'
+}
