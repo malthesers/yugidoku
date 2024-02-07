@@ -7,29 +7,47 @@ import { useState } from 'react'
 
 export default function Home() {
   const [level, setLevel] = useState<Matrix>({
-    column1: 'Water',
-    column2: 'Level 4',
-    column3: 'ATK 1500',
-    row1: 'Pyro',
-    row2: 'Fusion',
-    row3: 'Fish'
+    column1: {
+      property: 'attribute',
+      value: 'WATER'
+    },
+    column2: {
+      property: 'attribute',
+      value: 'FIRE'
+    },
+    column3: {
+      property: 'attribute',
+      value: 'WIND'
+    },
+    row1: {
+      property: 'level',
+      value: 1
+    },
+    row2: {
+      property: 'level',
+      value: 4
+    },
+    row3: {
+      property: 'level',
+      value: 6
+    }
   })
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="grid grid-cols-5 grid-rows-5 aspect-square max-w-2xl w-full">
-        <LabelBox label="x" />
-        <LabelBox label={level.column1} />
-        <LabelBox label={level.column2} />
-        <LabelBox label={level.column3} />
-        <LabelBox label="x" />
-        <LabelBox label={level.row1} />
+        <div />
+        <LabelBox property={level.column1} />
+        <LabelBox property={level.column2} />
+        <LabelBox property={level.column3} />
+        <div />
+        <LabelBox property={level.row1} />
         <GameGrid />
-        <LabelBox label="x" />
-        <LabelBox label={level.row2} />
-        <LabelBox label="x" />
-        <LabelBox label={level.row3} />
-        <LabelBox label="x" />
+        <div />
+        <LabelBox property={level.row2} />
+        <div />
+        <LabelBox property={level.row3} />
+        <div />
         <div className="col-span-5 grid place-content-center">
           <p className="text-center">bottom text</p>
         </div>

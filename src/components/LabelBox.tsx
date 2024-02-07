@@ -1,11 +1,13 @@
+import { Property } from '@/types'
+
 interface Props {
-  label: string
+  property: Property
 }
 
-export default function LabelBox({ label }: Props) {
+export default function LabelBox({ property }: Props) {
   return (
     <div className="size-full grid place-content-center">
-      <p>{label}</p>
+      <p>{property.value}</p>
     </div>
   )
 }

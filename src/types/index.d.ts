@@ -1,10 +1,10 @@
 export interface Matrix {
-  column1: string
-  column2: string
-  column3: string
-  row1: string
-  row2: string
-  row3: string
+  column1: Property
+  column2: Property
+  column3: Property
+  row1: Property
+  row2: Property
+  row3: Property
 }
 
 type Property = Level | Attribute
