@@ -8,27 +8,27 @@ import { useState } from 'react'
 export default function Home() {
   const [matrix, setMatrix] = useState<Matrix>({
     column1: {
-      property: 'attribute',
+      property: 'Attribute',
       value: 'WATER'
     },
     column2: {
-      property: 'attribute',
+      property: 'Attribute',
       value: 'FIRE'
     },
     column3: {
-      property: 'attribute',
+      property: 'Attribute',
       value: 'WIND'
     },
     row1: {
-      property: 'level',
+      property: 'Level',
       value: 1
     },
     row2: {
-      property: 'level',
+      property: 'Level',
       value: 4
     },
     row3: {
-      property: 'level',
+      property: 'Level',
       value: 6
     }
   })
