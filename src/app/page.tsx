@@ -6,7 +6,7 @@ import { Matrix } from '@/types'
 import { useState } from 'react'
 
 export default function Home() {
-  const [level, setLevel] = useState<Matrix>({
+  const [matrix, setMatrix] = useState<Matrix>({
     column1: {
       property: 'attribute',
       value: 'WATER'
@@ -37,16 +37,16 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <div className="grid grid-cols-5 grid-rows-5 aspect-square max-w-2xl w-full">
         <div />
-        <LabelBox property={level.column1} />
-        <LabelBox property={level.column2} />
-        <LabelBox property={level.column3} />
+        <LabelBox property={matrix.column1} />
+        <LabelBox property={matrix.column2} />
+        <LabelBox property={matrix.column3} />
         <div />
-        <LabelBox property={level.row1} />
+        <LabelBox property={matrix.row1} />
         <GameGrid />
         <div />
-        <LabelBox property={level.row2} />
+        <LabelBox property={matrix.row2} />
         <div />
-        <LabelBox property={level.row3} />
+        <LabelBox property={matrix.row3} />
         <div />
         <div className="col-span-5 grid place-content-center">
           <p className="text-center">bottom text</p>
