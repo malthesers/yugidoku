@@ -7,7 +7,7 @@ export interface Matrix {
   row3: Property
 }
 
-type Property = Level | Attribute | Type
+type Property = Level | Attribute | Type | CardType | Ability
 
 interface BaseProperty {
   property: string

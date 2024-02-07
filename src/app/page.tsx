@@ -16,20 +16,20 @@ export default function Home() {
       value: 'FIRE'
     },
     column3: {
-      property: 'Attribute',
-      value: 'WIND'
-    },
-    row1: {
-      property: 'Level',
-      value: 1
-    },
-    row2: {
       property: 'Level',
       value: 4
     },
+    row1: {
+      property: 'Type',
+      value: 'Fairy'
+    },
+    row2: {
+      property: 'Card Type',
+      value: 'Fusion'
+    },
     row3: {
-      property: 'Level',
-      value: 6
+      property: 'Ability',
+      value: 'Gemini'
     }
   })
 
