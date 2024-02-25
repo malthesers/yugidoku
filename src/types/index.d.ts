@@ -10,22 +10,22 @@ export interface Matrix {
 type Property = Level | Attribute | Type | CardType | Ability
 
 interface BaseProperty {
-  property: string
+  name: string
   value: string | number
 }
 
 interface Level extends BaseProperty {
-  property: 'Level'
+  name: 'Level'
   value: 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12
 }
 
 interface Attribute extends BaseProperty {
-  property: 'Attribute'
+  name: 'Attribute'
   value: 'DARK' | 'LIGHT' | 'EARTH' | 'WIND' | 'WATER' | 'FIRE'
 }
 
 interface Type extends BaseProperty {
-  property: 'Type'
+  name: 'Type'
   value:
     | 'Aqua'
     | 'Beast'
@@ -55,22 +55,22 @@ interface Type extends BaseProperty {
 }
 
 interface CardType extends BaseProperty {
-  property: 'Card Type'
+  name: 'Card Type'
   value: 'Normal' | 'Effect' | 'Ritual' | 'Fusion' | 'Synchro' | 'Xyz' | 'Pendulum' | 'Link'
 }
 
 interface Ability extends BaseProperty {
-  property: 'Ability'
+  name: 'Ability'
   value: 'Toon' | 'Spirit' | 'Union' | 'Gemini' | 'Flip'
 }
 
 interface ATK extends BaseProperty {
-  property: 'ATK'
+  name: 'ATK'
   value: BattleStats
 }
 
 interface DEF extends BaseProperty {
-  property: 'DEF'
+  name: 'DEF'
   value: BattleStats
 }
 

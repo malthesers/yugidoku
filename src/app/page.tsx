@@ -1,34 +1,34 @@
 'use client'
 
 import GameGrid from '@/components/GameGrid'
-import LabelBox from '@/components/LabelBox'
+import LabelBox from '@/components/label/LabelBox'
 import { Matrix } from '@/types'
 import { useState } from 'react'
 
 export default function Home() {
   const [matrix, setMatrix] = useState<Matrix>({
     column1: {
-      property: 'Attribute',
+      name: 'Attribute',
       value: 'WATER'
     },
     column2: {
-      property: 'Attribute',
+      name: 'Attribute',
       value: 'FIRE'
     },
     column3: {
-      property: 'Level',
+      name: 'Level',
       value: 4
     },
     row1: {
-      property: 'Type',
+      name: 'Type',
       value: 'Fairy'
     },
     row2: {
-      property: 'Card Type',
+      name: 'Card Type',
       value: 'Fusion'
     },
     row3: {
-      property: 'Ability',
+      name: 'Ability',
       value: 'Gemini'
     }
   })
